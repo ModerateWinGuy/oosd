@@ -10,5 +10,8 @@ class Deck():
             for x in range(0, 3):
                 self.deckcards.append(i)
 
-    def pullcard(self):
-        cardtopull = random.random()* self.deckcards
+    def deal_card(self):
+        cardtopull = random.random() * self.deckcards
+        card = self.deckcards[cardtopull]
+        self.deckcards.remove(self.deckcards, card)
+        return card

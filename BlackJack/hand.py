@@ -1,5 +1,6 @@
 __author__ = 'mazurdm1'
 import card
+import deck
 
 class Hand():
     def __init__(self):
@@ -69,44 +70,45 @@ class Hand():
     def show_cards(self):
         cardstring = ""
         for i in self.currentCards:
-             if self.currentCards[i] == 1:
+             if i == 1:
                  cardstring += " 1 "
 
-             if self.currentCards[i] == 2:
+             if i == 2:
                  cardstring += " 2 "
 
-             if self.currentCards[i] == 3:
+             if i == 3:
                  cardstring += " 3 "
 
-             if self.currentCards[i] == 4:
+             if i == 4:
                  cardstring += " 4 "
 
-             if self.currentCards[i] == 5:
+             if i == 5:
                  cardstring += " 5 "
 
-             if self.currentCards[i] == 6:
+             if i == 6:
                  cardstring += " 6 "
 
-             if self.currentCards[i] == 7:
+             if i == 7:
                  cardstring += " 7 "
 
-             if self.currentCards[i] == 8:
+             if i == 8:
                  cardstring += " 8 "
 
-             if self.currentCards[i] == 9:
+             if i == 9:
                  cardstring += " 9 "
 
-             if self.currentCards[i] == 10:
+             if i == 10:
                  cardstring += " 10 "
 
-             if self.currentCards[i] == 11:
+             if i == 11:
                  cardstring += " J "
 
-             if self.currentCards[i] == 12:
+             if i == 12:
                  cardstring += " Q "
 
-             if self.currentCards[i] == 13:
+             if i == 13:
                  cardstring += " K "
 
-             if self.currentCards[i] == 14:
+             if i == 14:
                  cardstring += " A "
+        return cardstring

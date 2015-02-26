@@ -1,5 +1,5 @@
 import hand
-import sys
+
 
 class Player():
 
@@ -12,13 +12,16 @@ class Player():
 
     def play_turn(self):
         if input("(h)it or (s)tand: ") == "h":
-            hand.addcard()
+            self.hand.addcard()
+        else:
+            self.set_hold()
 
     def hit_me(self, card):
         self.hand.addcard(card)
 
     def display_hand(self):
         return self.hand.show_cards()
+
 
 class House(Player):
 

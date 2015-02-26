@@ -1,5 +1,5 @@
 __author__ = 'mazurdm1'
-
+import card
 
 class Hand():
     def __init__(self):
@@ -65,3 +65,48 @@ class Hand():
 
     def addcard(self, cardvalue):
         self.currentCards.append(cardvalue)
+
+    def show_cards(self):
+        cardstring = ""
+        for i in self.currentCards:
+             if self.currentCards[i] == 1:
+                 cardstring += " 1 "
+
+             if self.currentCards[i] == 2:
+                 cardstring += " 2 "
+
+             if self.currentCards[i] == 3:
+                 cardstring += " 3 "
+
+             if self.currentCards[i] == 4:
+                 cardstring += " 4 "
+
+             if self.currentCards[i] == 5:
+                 cardstring += " 5 "
+
+             if self.currentCards[i] == 6:
+                 cardstring += " 6 "
+
+             if self.currentCards[i] == 7:
+                 cardstring += " 7 "
+
+             if self.currentCards[i] == 8:
+                 cardstring += " 8 "
+
+             if self.currentCards[i] == 9:
+                 cardstring += " 9 "
+
+             if self.currentCards[i] == 10:
+                 cardstring += " 10 "
+
+             if self.currentCards[i] == 11:
+                 cardstring += " J "
+
+             if self.currentCards[i] == 12:
+                 cardstring += " Q "
+
+             if self.currentCards[i] == 13:
+                 cardstring += " K "
+
+             if self.currentCards[i] == 14:
+                 cardstring += " A "

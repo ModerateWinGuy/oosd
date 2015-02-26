@@ -1,5 +1,7 @@
 __author__ = 'mazurdm1'
 import random
+
+
 class Deck():
 
     def __init__(self):
@@ -11,7 +13,7 @@ class Deck():
                 self.deckcards.append(i)
 
     def deal_card(self):
-        cardtopull = random.random() * self.deckcards
-        card = self.deckcards[cardtopull]
+        card_to_pull = random.random() * self.deckcards
+        card = self.deckcards[card_to_pull]
         self.deckcards.remove(self.deckcards, card)
         return card

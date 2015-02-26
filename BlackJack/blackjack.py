@@ -1,15 +1,13 @@
-__author__ = 'mazurdm1'
-import deck
-import card
-import hand
-import house
+import sys
 import player
 
-person_Player = player
-housePlayer = house
+person_Player = player.Player()
+housePlayer = player.House()
 gameOver = False
 
+print("Time to play Blackjack!")
 # Deal cards.
+
 
 # Display cards, with one dealers card obscured.
 

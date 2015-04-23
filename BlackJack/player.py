@@ -1,4 +1,5 @@
 import hand
+import strategy
 
 
 class Player():
@@ -26,6 +27,13 @@ class Player():
 
 class House(Player):
 
-    def play_turn(self):
+    def __init__(self):
+        super.__init__()
+        self.strat = strategy.Strategy()
+        self.done = False
+
+    def play_turn(self, deck):
+        if self.strat.hit() is True:
+            self.hand.addcard(deck.deal_card())
         temp = ""
         temp = self.hand.show_cards()

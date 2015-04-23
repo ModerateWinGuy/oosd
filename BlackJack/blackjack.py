@@ -20,7 +20,7 @@ print(person_Player.display_hand())
 print("House:")
 print(housePlayer.display_hand())
 # Player hits until bust, blackjack, or holds.
-while person_Player.hold == False && person_Player.bust == False:
+while person_Player.hold is False and person_Player.bust is False:
     person_Player.play_turn(card_Deck)
     print("Player:")
     print(person_Player.display_hand())
@@ -28,5 +28,7 @@ while person_Player.hold == False && person_Player.bust == False:
     print(housePlayer.display_hand())
 
 # House hits until over 16 or bust.
+while housePlayer.done is False:
+    housePlayer.play_turn()
 
 # Game over

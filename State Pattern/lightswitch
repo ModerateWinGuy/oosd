@@ -1,0 +1,31 @@
+
+
+class LightSwitch():
+
+    def __init__(self):
+
+        self.state = Off()
+
+    def switch(self):
+        self.state = self.state.switch()
+
+    def display(self):
+        print(self.state.desc)
+
+
+class On():
+
+    def __init__(self):
+        self.desc = "The light is on"
+
+    def switch(self):
+        return Off()
+
+
+class Off():
+
+    def __init__(self):
+        self.desc = "The light is off"
+
+    def switch(self):
+        return On()
